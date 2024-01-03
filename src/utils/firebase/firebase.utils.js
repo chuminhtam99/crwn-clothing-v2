@@ -77,3 +77,4 @@ export const signInAuthUserWithEmailAndPassword = async (email, password) => {
 };
 
 export const signOutUser = async () => await signOut(auth);
+// 5. ta có đc 1 user thành công sign out
