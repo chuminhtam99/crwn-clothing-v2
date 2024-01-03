@@ -19,7 +19,7 @@ export const UserProvider = ({ children }) => {
       // if (user) {
       //   log(user);
       // } thì ta vẫn sẽ nhận đc user cũ, dù nó có sign in hay out, vì fire base luôn giữ kết nối vs cái đã đăng nhập và luôn mark nó là authentication => thêm signOutUser tại firebase.util .... + 1 tỉ bước lằng nhằng => túm lại là nhờ thằng này (của firebase) sẽ nghe ngóng mọi động tĩnh in/out, dồn lại 1 chỗ này, ko cần phải dùng useContext mỗi file 1 ít như bài trc nữa! 
-    // chạy đến sign-up-form để biết thêm
+    // chạy đến sign-up-form và navigation để xóa useContext như ở bài cũ
     const unsubscribe = onAuthStateChangedListener((user) => {
       if (user) {
         createUserDocumentFromAuth(user);
