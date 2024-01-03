@@ -16,6 +16,7 @@ render(
         <App />
       </UserProvider>
     </BrowserRouter>
+  // 2. như vậy là ta đã cho mọi component thuộc app có đc quyền vào context, xem tiếp tại sign-in-form
   </React.StrictMode>,
   rootElement
 );
