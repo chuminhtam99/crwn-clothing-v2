@@ -15,6 +15,7 @@ const Navigation = () => {
   const signOutHandler = async () => {
     await signOutUser();
     setCurrentUser(null);
+    // 6. sau khi sign out xong ta cho user về null
   };
 
   return (
