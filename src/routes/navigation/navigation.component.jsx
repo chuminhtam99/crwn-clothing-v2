@@ -29,6 +29,7 @@ const Navigation = () => {
           </Link>
 
           {currentUser ? (
+      // 4 . phần này có ý nghĩa là nếu có user trong context, tức ng dùng đã siggn in rồi thì ta ghi là sign-out, ngc lại là sign in. tiếp tục add 1 cái sign out ở util...
             <span className='nav-link' onClick={signOutHandler}>
               {' '}
               SIGN OUT{' '}
