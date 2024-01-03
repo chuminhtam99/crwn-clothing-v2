@@ -81,4 +81,4 @@ export const signOutUser = async () => await signOut(auth);
 
 export const onAuthStateChangedListener = (callback) =>
   onAuthStateChanged(auth, callback);
-// 1. hàm này nhận 1 callback function. xem tiếp tại user.context.jsx
+// 1. hàm này nhận 1 callback function, cho nó làm param thứ 2 của onAuthStateChanged. onAuthStateChanged làm nhiệm vụ xem có sự thay đổi của auth , là log in,out, rồi gọi callback. xem tiếp tại user.context.jsx
