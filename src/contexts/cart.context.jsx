@@ -17,6 +17,7 @@ const addCartItem = (cartItems, productToAdd) => {
 };
 
 const removeCartItem = (cartItems, cartItemToRemove) => {
+  // 4. chỗ này để cho giảm quantity
   // find the cart item to remove
   const existingCartItem = cartItems.find(
     (cartItem) => cartItem.id === cartItemToRemove.id
