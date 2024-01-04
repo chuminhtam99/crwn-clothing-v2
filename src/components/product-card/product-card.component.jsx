@@ -9,7 +9,7 @@ import './product-card.styles.scss';
 const ProductCard = ({ product }) => {
   const { name, price, imageUrl } = product;
   const { addItemToCart } = useContext(CartContext);
-
+// 5. ta sử dụng context để có đc hàm addItemToCart, để mỗi khi click là lấy đc thông tin của product
   const addProductToCart = () => addItemToCart(product);
 
   return (
