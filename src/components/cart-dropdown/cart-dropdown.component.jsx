@@ -15,6 +15,7 @@ const CartDropdown = () => {
       <div className='cart-items'>
         {cartItems.length ? (
           cartItems.map((cartItem) => (
+            // 4. sử dụng context để lấy ra hết các thứ trong cartItems
             <CartItem key={cartItem.id} cartItem={cartItem} />
           ))
         ) : (
