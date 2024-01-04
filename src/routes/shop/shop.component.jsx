@@ -8,6 +8,7 @@ import './shop.styles.scss';
 
 const Shop = () => {
   const { products } = useContext(ProductsContext);
+  // 5. lấy thằng từ context thay vì lấy từ file shop.data.json
 
   return (
     <div className='products-container'>
