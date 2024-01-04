@@ -48,10 +48,13 @@ export const addCollectionAndDocuments = async (
   objectsToAdd
 ) => {
   const batch = writeBatch(db);
+  // 3.2. batch là việc đảm bảo cho 1 transaction sẽ được thực hiện thành công ở cả 2 đầu. vd nếu đầu 2 fail trong việc nhận thêm data
+  // thì đầu 1 phải fail nốt trong việc gửi bớt data
   const collectionRef = collection(db, collectionKey);
-  
+  // 3.1. ta có trong tay đc 1 collection
   objectsToAdd.forEach((object) => {
      const docRef = doc(collectionRef, object.title.toLowerCase());
+    // 3.3. ta lấy đc 1 cái item trong colletion với hàm doc trên
      batch.set(docRef, object);
   });
 
