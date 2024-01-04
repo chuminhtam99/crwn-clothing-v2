@@ -15,6 +15,7 @@ render(
     <BrowserRouter>
       <UserProvider>
         <ProductsProvider>
+  // 4. chỗ này cần hiểu như thứ tự truy cập context?? ko hiểu lắm?
           <App />
         </ProductsProvider>
       </UserProvider>
