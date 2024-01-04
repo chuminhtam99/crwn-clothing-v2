@@ -17,3 +17,4 @@ const CartItem = ({ cartItem }) => {
 };
 
 export default CartItem;
+// 1. vẽ nên 1 cái item trong cart
