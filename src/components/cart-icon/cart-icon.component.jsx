@@ -10,7 +10,7 @@ const CartIcon = () => {
   const { isCartOpen, setIsCartOpen } = useContext(CartContext);
 
   const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
-
+// 6. đây là hàm khi trigger onclick, với mục đích ấn icon cart thì drop down hiện ra, rồi ẩn đi => cần thay đổi state isCartOpen
   return (
     <div className='cart-icon-container' onClick={toggleIsCartOpen}>
       <ShoppingIcon className='shopping-icon' />
