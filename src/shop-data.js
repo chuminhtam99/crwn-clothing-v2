@@ -1,4 +1,5 @@
 const SHOP_DATA = [
+// 1. sửa thành file .js
   {
     title: 'Hats',
     items: [
