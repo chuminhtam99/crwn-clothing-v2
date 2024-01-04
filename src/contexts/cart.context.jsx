@@ -38,7 +38,7 @@ const removeCartItem = (cartItems, cartItemToRemove) => {
 
 const clearCartItem = (cartItems, cartItemToClear) =>
   cartItems.filter((cartItem) => cartItem.id !== cartItemToClear.id);
-
+// 6. chức năng remove 1 item
 export const CartContext = createContext({
   isCartOpen: false,
   setIsCartOpen: () => {},
@@ -55,6 +55,7 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
   const [cartTotal, setCartTotal] = useState(0);
+  // 7. chức năng tính tổng cart
 
   useEffect(() => {
     const newCartCount = cartItems.reduce(
