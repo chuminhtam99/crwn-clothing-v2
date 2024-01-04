@@ -39,6 +39,7 @@ const Navigation = () => {
           <CartIcon />
         </div>
         {isCartOpen && <CartDropdown />}
+{/*         5. nếu mở card thì nó sẽ có hiển thị phần dropdown xuống */}
       </div>
       <Outlet />
     </Fragment>
