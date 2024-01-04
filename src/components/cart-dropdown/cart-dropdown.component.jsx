@@ -4,7 +4,7 @@ import { CartContext } from '../../contexts/cart.context';
 
 import Button from '../button/button.component';
 import CartItem from '../cart-item/cart-item.component';
-
+// 2. add phần nội dung card item vào đây
 import './cart-dropdown.styles.scss';
 
 const CartDropdown = () => {
