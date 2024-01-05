@@ -1,6 +1,6 @@
 import { useContext, useState, useEffect, Fragment } from 'react';
 import { useParams } from 'react-router-dom';
-
+// 4. dùng cái này
 import ProductCard from '../../components/product-card/product-card.component';
 
 import { CategoriesContext } from '../../contexts/categories.context';
@@ -21,6 +21,7 @@ const Category = () => {
       <h2 className='category-title'>{category.toUpperCase()}</h2>
       <div className='category-container'>
         {products &&
+          // 4. lưu ý chỗ này vì products rất có thể là undefined....
           products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
@@ -30,3 +31,4 @@ const Category = () => {
 };
 
 export default Category;
+// 4. đây là page render ra các sp của từng danh mục, vs danh mục jackets là theo đường dẫn : /shop/jackets
