@@ -11,6 +11,7 @@ const Shop = () => {
       <Route index element={<CategoriesPreview />} />
 {/*       3. ở trong shop thêm đường dẫn này */}
       <Route path=':category' element={<Category />} />
+{/*       5. tạo path ntn để có link kiểu như /shop/hats */}
     </Routes>
   );
 };
