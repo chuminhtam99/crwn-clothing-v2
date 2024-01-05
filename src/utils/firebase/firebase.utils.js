@@ -62,17 +62,20 @@ export const addCollectionAndDocuments = async (
 };
 
 export const getCategoriesAndDocuments = async () => {
+  // 2.1. thêm 1 method để get được item từ db
   const collectionRef = collection(db, 'categories');
   const q = query(collectionRef);
 
   const querySnapshot = await getDocs(q);
   const categoryMap = querySnapshot.docs.reduce((acc, docSnapshot) => {
     const { title, items } = docSnapshot.data();
+    // 2.2. đầu tiên có 1 cái obj {} ; theo từng loop thì ta cho obj có hats = 1 loạt các items trong db, có shoes = 1 loạt các items trong db
     acc[title.toLowerCase()] = items;
     return acc;
   }, {});
 
   return categoryMap;
+  // 2.3. như vây theo code trên ta có đc 1 json object. xem trong flow để rõ hơn
 };
 
 export const createUserDocumentFromAuth = async (
