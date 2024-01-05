@@ -9,6 +9,7 @@ const Shop = () => {
   return (
     <Routes>
       <Route index element={<CategoriesPreview />} />
+{/*       3. ở trong shop thêm đường dẫn này */}
       <Route path=':category' element={<Category />} />
     </Routes>
   );
