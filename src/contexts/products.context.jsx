@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from 'react';
 
 import { getCategoriesAndDocuments } from '../utils/firebase/firebase.utils';
-
+// 3. import cái này
 export const ProductsContext = createContext({
   products: [],
 });
