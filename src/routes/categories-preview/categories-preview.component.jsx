@@ -19,3 +19,4 @@ const CategoriesPreview = () => {
 };
 
 export default CategoriesPreview;
+// 2. copy cái shop cũ sang đây
