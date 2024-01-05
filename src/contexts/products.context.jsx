@@ -13,7 +13,7 @@ export const ProductsProvider = ({ children }) => {
 // 2. chỉnh
   // useEffect(() => {
   //   addCollectionAndDocuments('collections', SHOP_DATA);
-  // 4. thêm
+  // 4. thêm component did mount để có collection tên collection , chứa shop data như miêu tả ở bước 5. chỗ này chỉ là check thui
   // }, []);
 
   const value = { products };
