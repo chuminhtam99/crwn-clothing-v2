@@ -55,6 +55,7 @@ export const addCollectionAndDocuments = async (
   objectsToAdd.forEach((object) => {
      const docRef = doc(collectionRef, object.title.toLowerCase());
     // 3.3. ta lấy đc 1 cái item trong colletion với hàm doc trên
+    // 7. có thể đổi phần .title ở trên thành 1 field để đỡ hard code
      batch.set(docRef, object);
   });
 
