@@ -13,6 +13,7 @@ export const ProductsProvider = ({ children }) => {
     const categoryMap = await getCategoriesAndDocuments('categories');
     console.log(categoryMap);
   }, []);
+  // 3. lấy được thành công các item từ ngay component did mount
 
   const value = { products };
   return (
